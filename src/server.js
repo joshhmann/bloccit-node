@@ -1,3 +1,5 @@
+//node src/server.js to start app
+//also added command script in package.json start the app by using npm start
 const app = require("./app");
 const http = require("http");
 

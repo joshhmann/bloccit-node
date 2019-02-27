@@ -1,15 +1,15 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Topic = sequelize.define('Topic', {
+  var Topics = sequelize.define('Topics', {
     title: DataTypes.STRING,
     description: DataTypes.STRING
   }, {});
-  Topic.associate = function(models) {
+  Topics.associate = function(models) {
     // associations can be defined here
-    Topic.hasMany(models.Banner, {
+    Topics.hasMany(models.Banners, {
       foreignKey: "topicId",
       as: "banners",
     });
   };
-  return Topic;
+  return Topics;
 };

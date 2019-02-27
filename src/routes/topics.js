@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const topicController = require("../controllers/topicController")
+const topicsController = require("../controllers/topicsController")
 
-router.get("/topics", topicController.index);
+router.get("/topics", topicsController.index);
 
 module.exports = router;
