@@ -11,10 +11,10 @@
 
       <ul class="list-group">
 <!-- #1 -->
-        <% topics.forEach((topic) => { %>
+        <% topics.forEach((topics) => { %>
 <!-- #2 -->
           <li class="list-group-item">
-            <a href="/topics/<%= topic.id %>"> <%= topic.title %> </a>
+            <a href="/topics/<%= topics.id %>"> <%= topics.title %> </a>
           </li>
         <% }) %>
       </ul>
